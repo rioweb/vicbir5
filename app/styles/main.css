@@ -35,9 +35,9 @@ body {
     margin: 0 0;
 }
 .men{
-  width: 100%;
+  width: 30px;
   border: none;
-  padding: 5px 9px;
+  padding: 5px 0px;
 }
 
 .men:hover,
@@ -48,6 +48,8 @@ body {
   background: none;
 }
 .menu {
+  margin: 0;
+  padding: 0;
     width:15px;
 }
 
