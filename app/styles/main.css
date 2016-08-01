@@ -38,6 +38,8 @@ body {
   width: 30px;
   border: none;
   padding: 5px 0px;
+  position: fixed;
+  z-index: 10;
 }
 
 .men:hover,
@@ -50,7 +52,7 @@ body {
 .menu {
   margin: 0;
   padding: 0;
-    width:15px;
+    width:30px;
 }
 
 /* //////////// QUIEN SOY //////////// */
@@ -63,10 +65,16 @@ body {
     overflow: hidden;
 }
 #quienimg{
-    max-height: 300px;;
+    background-image: url(../images/disco.jpg);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 300px;
 }
 #quientexto{
-    
+    color: white;
+    text-align: left;
+    padding: 5px;
 }
 
 
@@ -93,9 +101,14 @@ h2 {
   background-repeat: no-repeat; 
 }
 
-.gale{
-  padding-top: 15px;
+#menu{
+    padding: 3px;
 }
+
+.gale{
+    padding-top: 12px; 
+}
+
 figure {
     position: relative;
     display: inline-block;
@@ -155,6 +168,17 @@ div.col-md-6 {
   font-weight: bold;
 }
 
+/* //////////// VIDEO //////////// */
+
+#imgvideo{
+        padding-right: 0px;
+        padding-left: 0px;
+        }
+
+#botvideo{
+    
+}
+
 /* //////////// CONTACTO //////////// */
 
 
@@ -166,23 +190,35 @@ div.col-md-6 {
 }
 
 
+/* //////////// FECHAS //////////// */
+
+#fechas{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 /* //////////// BARRA //////////// */
 
 
 #barraizq{
   position: fixed;
-  height: 75vh;
-  width: 30px;
+  height: 50vh;
+  top:0;
+  width: 29px;
   left: 0;
   background-color: white;
   z-index: 5;
+  display: block;
 }
 .nav > li > a {
-    padding: 12px 2px 2px 2px;
+    padding: 12px 0px 2px 12px;
     width: 25px;
 }
 .nav,.navbar{
   position: relative;
+    padding-left: 0px;
+    margin-top: ;
+    height: 50vh;
 }
 .navbar-default{
   background-color: white;
@@ -213,17 +249,16 @@ div.col-md-6 {
 .barraitem{
   position: absolute;
   margin-top:1px; 
-  margin-left:1px;
+  margin-left: 1px;
 }
 .navbar-default .navbar-nav > .active > a{
     margin-left: 6px;
 }
 .navbar-default .navbar-nav > .active > a > .itemout > .barraitem{
-  width: 1px;
   height: 1px;
-  
+  width: 1px;
   margin-top:0px; 
-  margin-left:0px; 
+
 }
 .navbar-default .navbar-nav > .active > a > .itemout{
   width: 10px;
@@ -232,10 +267,10 @@ left: 50%;
 }
 
 ul.nav.navbar-nav {
-   margin-top: 25vh; 
+    margin-top: 30vh;
 }
 .glyphicon{
-  width: 40px;
+  
 }
 
 
@@ -253,13 +288,14 @@ ul.nav.navbar-nav {
 }
 #barrader{
   position: fixed;
-  height: 100%;
+  height: 60vh;
   top:0;
   width: 29px;
   right: 0;
   background-color: white;
   z-index: 5;
   display: block;
+  
 }
 #barrader ul{
   list-style: none;
@@ -268,6 +304,8 @@ ul.nav.navbar-nav {
 .redes{
   position: absolute;
   bottom: 0;
+  padding-left: 6px;
+  margin-top: 30vh;
 }
 .accesos{
   margin-bottom: 20px;
@@ -302,4 +340,6 @@ ul.nav.navbar-nav {
 @media screen and (min-width: 768px) {
     
 }
+
+
   
