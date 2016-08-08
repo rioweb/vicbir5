@@ -39,6 +39,7 @@ $(function(){
 		offset: topoffset
 	});
 
+  $('.collapse').collapse()
 
 if (window.matchMedia('(min-width: 800px)').matches) {
   var hash = $(this).find('li.active a').attr('href');

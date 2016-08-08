@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
-
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/animate.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -37,60 +37,63 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
   </head>
-  <body data-spy="scroll">
-      
+  <body data-spy="scroll" data-target="#navbar">
+      <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
       
  <!-- /////////// BARRA /////////// -->    
            
-      
-      <div id="barraizq">
-        
-   
+    <header id="barraizq">
+      <a href=""><img src="/images/menu.jpg" alt="menu" id="menu"></a>
+      <nav class="navbar navbar-default">
+        <div id="navbar">
           
-      <header>
-    <nav class="navbar navbar-default">
-        
-        
-          
-          <div id="navbar">
-              <a href=""><img src="/images/menu.jpg" alt="menu" id="menu"></a>
-              <ul class="nav navbar-nav">
-            <li class="active"><a href="#parallaxportada">
-
+          <ul class="nav navbar-nav"  id="#navbar">
+            <li class="active">
+              <a href="#parallaxportada">
+                <div class="itemout">
+                  <div class="barraitem"></div>
+                </div>
+            </a></li>
+          <li>
+            <a href="#quien">
               <div class="itemout">
                 <div class="barraitem"></div>
               </div>
-            </a></li>
-              
-            <li><a href="#quien">
-
+            </a>
+          </li>
+          <li>
+            <a href="#fotos">
+              <div class="itemout">
+                <div class="barraitem"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#videos">
+              <div class="itemout">
+                <div class="barraitem"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#contacto">
               <div class="itemout">
               <div class="barraitem"></div>
-              </div>
-            </a></li>
-            <li><a href="#fotos">
-
-              <div class="itemout">
-              <div class="barraitem"></div>
-              </div>
-            </a></li>
-            <li><a href="#videos">
-
-              <div class="itemout">
-              <div class="barraitem"></div>
-              </div>
-            </a></li>
-            <li><a href="#contacto">
-              <div class="itemout">
-              <div class="barraitem"></div>
-              </div>
-            </a></li>
-              </ul>
-          </div><!-- /.nav-collapse  -->
-        
+            </div>
+            </a>
+          </li>
+        </ul>
+      </div><!-- /.nav-collapse  -->
     </nav>
-    </header>
-      </div>
+  </header>
+
       
       
  <!-- /////////// PORTADA /////////// -->    
@@ -105,7 +108,7 @@
    <div class="section" id="quien">
        
        <div class="row color">
-           <h2>Quien soy</h2>   
+           <h2>QUIEN SOY</h2>   
            
             <div class="col-md-7 col-md-offset-1" id="quientexto">
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p> 
@@ -123,7 +126,7 @@
    <div class="section" id="fotos">
         <div class="row">
 
-            <h1 class="heading text-center">Fotos</h1>
+            <h1 class="heading text-center">FOTOS</h1>
           </div> 
         <div id="fotosdiv">
           
@@ -195,7 +198,7 @@
      </div>
        
 <!-- /////////// FECHAS /////////// --> 
- <div class="col-xs-12 col-sm-12 col-md-12 col-md-offset-0" id="fechas">
+ <div class="col-xs-12 col-md-offset-0" id="fechas">
      
      <h2 class="heading" style="color:black">Fechas</h2>
                            
@@ -248,7 +251,7 @@
    
  
 </div>       
-<!-- /////////// VIDEOS /////////// -->
+<!-- /////////// VIDEOS ///////////-->
       
    <div class="section" id="videos">
         
@@ -269,11 +272,37 @@
         </div>
       </div>
    </div>
-            
+     
+<!--
+   <div id="login-container" class="pre-auth">This application requires access to your YouTube account.
+      Please <a href="#" id="login-link">authorize</a> to continue.
+    </div>
+    <div id="buttons">
+      <button id="playlist-button" disabled onclick="createPlaylist()">Create a new Private Playlist</button>
+      <br>
+      <label>Current Playlist Id: <input id="playlist-id" value='' type="text"/></label>
+      <br>
+      <label>Video Id: <input id="video-id" value='GZG9G5txtaE' type="text"/></label><button onclick="addVideoToPlaylist()">Add to current playlist</button>
+    </div>
+    <h3>Playlist: <span id="playlist-title"></span></h3>
+    <p id="playlist-description"></p>
+    <div id="playlist-container">
+      <span id="status">No Videos</span>
+    </div>
+   -->
+
+
 <!-- /////////// CONTACTO /////////// -->  
       
    <div class="section" id="contacto">
-         
+
+         <div class="col-md-4"></div>
+
+         <div class="col-md-4">
+
+          <div class="fb-page" data-href="https://www.facebook.com/VictoriaBirchner" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/VictoriaBirchner" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/VictoriaBirchner">Victoria Birchner</a></blockquote></div>
+         </div>
+         <div class="col-md-4">
           <div class="row color">  
             <h2>Contacto</h2>  
             <div class="col-md-6 col-md-offset-3">
@@ -300,10 +329,10 @@
                           <button class="btn linkform" type="submit" >Enviar</button>     
                         </div>
                     
-          </div>        
-
-        </div>
-   </div>
+        </div>        
+      </div>
+    </div>
+  </div>
    <div id="barrader">
     <div class="redes">
     <a href=""><img src="/images/logoinstablack.jpg" alt="vicbirinstagram" class="accesos"></a>
@@ -329,12 +358,17 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
+    <!--
+     <script src="scripts/auth.js"></script>
+    <script src="scripts/playlist_updates.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+  -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
     <!-- build:js scripts/plugins.js -->
  
     <!-- endbuild -->
        
-    <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
     
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>

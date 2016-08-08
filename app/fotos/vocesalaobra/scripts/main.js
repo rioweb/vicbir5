@@ -123,10 +123,6 @@ var progress = setInterval(function () {
     }
 }, 800);
 
-$(window).load(function() {
-  $('#bar').width(600);
-  $('.loader').fadeOut(3000);
-});
 $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
