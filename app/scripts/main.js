@@ -19,6 +19,14 @@ $('.nav li, .nav li a').click(function (e) {
 
 });
 
+$('#menux').click(function(){
+    $('#menu').fadeIn(300).removeClass('hidden').addClass('visible');  
+});
+$('#closer').click(function(){
+    $('#menu').fadeOut(600).addClass('hidden');  
+});
+
+
 if(window.matchMedia('(max-width: 480px)').matches) {
   var weight = $(window).height();
   $('.fullheight').css('height', weight);
