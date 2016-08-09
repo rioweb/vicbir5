@@ -18,6 +18,16 @@ body {
     padding-right: 35px;
 } 
 
+#viclogo{
+   font-family: 'Amatic SC';  
+   font-size: 100px;  
+    position: absolute;
+    overflow: visible;
+    float: left;
+    z-index: 20;
+    margin-top: 50vh;
+}
+
 .section{
     margin-bottom: 60px;
 }
