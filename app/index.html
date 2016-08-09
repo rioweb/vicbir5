@@ -46,8 +46,17 @@
   js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.7";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+ <!-- /////////// PRELOADER /////////// -->    
       
+    <div id="preloader" class="preloader">
+      <div class="hojacont">
+      <img src="images/hoja.jpg" class="ímg-responsive hoja">
+      </div>
+    </div>
+
  <!-- /////////// BARRA /////////// -->    
+
            
     <header id="barraizq">
       <a href=""><img src="/images/menu.jpg" alt="menu" id="menu"></a>
@@ -70,6 +79,13 @@
           </li>
           <li>
             <a href="#fotos">
+              <div class="itemout">
+                <div class="barraitem"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#fechas">
               <div class="itemout">
                 <div class="barraitem"></div>
               </div>
@@ -100,6 +116,7 @@
            
    <div class="section" id="portada">
        <div id="parallaxportada">
+        <h1 class="bigtitle">Victoria <br> Birchner </h1>
        </div>
    </div>
       
@@ -198,15 +215,12 @@
      </div>
        
 <!-- /////////// FECHAS /////////// --> 
- <div class="col-xs-12 col-md-offset-0" id="fechas">
-     
-     <h2 class="heading" style="color:black">Fechas</h2>
-                           
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div id="fechas">
+ <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           Collapsible Group Item #1
         </a>
       </h4>
@@ -245,12 +259,8 @@
       </div>
     </div>
   </div>
-</div>
-  
-  
-   
- 
 </div>       
+</div>
 <!-- /////////// VIDEOS ///////////-->
       
    <div class="section" id="videos">
@@ -356,16 +366,16 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!--
      <script src="scripts/auth.js"></script>
     <script src="scripts/playlist_updates.js"></script>
     <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
-  -->
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+  -->            
     <!-- build:js scripts/plugins.js -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
  
     <!-- endbuild -->
        
