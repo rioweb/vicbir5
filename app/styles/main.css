@@ -8,7 +8,9 @@
   -webkit-box-sizing:boder-box;
   -moz-box-sizing:border-box;
   box-sizing:border-box;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
   text-rendering: optimizeLegibility;
 }
 
@@ -17,19 +19,67 @@ body {
     padding-left: 35px;
     padding-right: 35px;
 } 
+#preloader, #menu{
+  position: fixed;
+  background-color: #e0f2f1;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: inset 0 0 0 25px #fff;
+  -moz-box-shadow: inset 0 0 0 25px #fff;
+  -webkit-box-shadow: inset 0 0 0 25px #fff;
+}
+#menu{
+  display: none;
+}
+#menu ul{
+  color: #009688;
+  font-size: 30px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  list-style: none;
+  top:30%;
+}
+.clos{
+  color: #009688;
+  cursor: pointer;
+}
+.logo{
+  position: absolute;
+  bottom: 50px;
+}
+#preloader .hidden{
+  display: none;
+  opacity: 0;
+}
+.hoja{
+   -webkit-animation: rotation 10s infinite linear;  
+}
+.hojacont{
+  position: absolute;
+  top: 40%;
+  margin-left: 50%;
+  transform-origin: 2px 30% 10px;
+  -webkit-animation: rotation 10s infinite linear;
+}
 
-#viclogo{
-   font-family: 'Amatic SC';  
-   font-size: 100px;  
-    position: absolute;
-    overflow: visible;
-    float: left;
-    z-index: 20;
-    margin-top: 50vh;
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
 }
 
 .section{
     margin-bottom: 60px;
+    padding-top: 50px;
+}
+
+#portada {
+ padding-top: 0;   
 }
 
 #parallaxportada{
@@ -40,9 +90,20 @@ body {
   padding: 5%;
   background-size: cover; 
 }
-
+.bigtitle h1{
+  font-size: 80px;
+  font-weight: 700;
+}
 .row {
     margin: 0 0;
+}
+@media (min-width: 992px)
+.col-md-offset-3 {
+    margin-left: 0;
+}
+@media (min-width: 992px)
+.col-md-6 {
+    width: 100%;
 }
 .men{
   width: 30px;
@@ -59,23 +120,18 @@ body {
   border-color: none;
   background: none;
 }
-.menu {
-  margin: 0;
-  padding: 0;
-    width:30px;
-}
 
 /* //////////// QUIEN SOY //////////// */
 
 
 #quien{
-    background-color: lightcoral;
-    padding-top: 1%;
+    background-color: #009688;
     padding-bottom: 3%;
     overflow: hidden;
+    margin-bottom: 0;
 }
 #quienimg{
-    background-image: url(../images/disco.jpg);
+    background-image: url(../images/vik-46.png);
     background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-size: contain;
@@ -103,16 +159,19 @@ h2 {
   width: 100%;
   position: relative;
   margin: 0 0;
-  padding-top: 50px;
   padding-left: 30px;
   padding-right: 30px;    
   background-size: cover;
   background-position: 10% 20%;
   background-repeat: no-repeat; 
+  margin-bottom: 80px;
 }
 
-#menu{
+#menux{
+  display: block;
+  z-index: 1000;
     padding: 3px;
+  cursor: pointer;
 }
 
 .gale{
@@ -162,7 +221,7 @@ div.col-md-6 {
   right: 30px;
   bottom: 15px;
   background-color: white;
-  color: lightcoral;
+  color: #009688;
   font-weight: bold;
   position: absolute;
   margin-top: 15px;
@@ -173,13 +232,15 @@ div.col-md-6 {
   position: relative;
   margin: 0 auto;
   background-color: white;
-  color: lightcoral;
+  color: #009688;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)!important;
   font-weight: bold;
 }
 
 /* //////////// VIDEO //////////// */
-
+#videos {
+    padding-top: 0;
+}
 #imgvideo{
         padding-right: 0px;
         padding-left: 0px;
@@ -193,10 +254,11 @@ div.col-md-6 {
 
 
 #contacto{
-    background-color: lightcoral;
+    background-color: #009688;
     padding-top: 1%;
     padding-bottom: 3%;
     overflow: hidden;
+    padding: 5px;
 }
 
 
@@ -204,7 +266,7 @@ div.col-md-6 {
 
 #fechas{
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 
 /* //////////// BARRA //////////// */
@@ -218,7 +280,7 @@ div.col-md-6 {
   left: 0;
   background-color: white;
   z-index: 5;
-  display: block;
+  display: block; 
 }
 .nav > li > a {
     padding: 12px 0px 2px 12px;
@@ -297,6 +359,7 @@ ul.nav.navbar-nav {
     transform: translateY(-10%);
 }
 #barrader{
+
   position: fixed;
   height: 60vh;
   top:0;
@@ -305,8 +368,9 @@ ul.nav.navbar-nav {
   background-color: white;
   z-index: 5;
   display: block;
-  
+   
 }
+
 #barrader ul{
   list-style: none;
   color: black;
@@ -321,9 +385,7 @@ ul.nav.navbar-nav {
   margin-bottom: 20px;
 }
 .accesos:hover{
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-  height: 18px;
+  opacity: 0.7;
 }
 
 #parallax1{
@@ -337,9 +399,16 @@ ul.nav.navbar-nav {
 
 
 
+#noticias{
+    padding-top: 0;
+}
+.noti {
+    padding: 10px;
+}
 
-
-
+.cardimg {
+    
+}
 
 
 
@@ -352,4 +421,10 @@ ul.nav.navbar-nav {
 }
 
 
-  
+  body,#barraizq, #barrader,nav, .navbar-default, #navbar li a{
+    background-color: #e0f2f1;
+  }
+  h2, h1{
+    font-weight: 700;
+    font-size: 1.9em;
+  }

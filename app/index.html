@@ -11,10 +11,10 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.css' />
     <!-- endbower -->
     <!-- endbuild -->
-
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/animate.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -38,79 +38,114 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
   </head>
-  <body data-spy="scroll">
+
+  <body data-spy="scroll" data-target="#navbar">
+      <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+ <!-- /////////// PRELOADER /////////// -->    
 
       
-      <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-      
+    <div id="preloader" class="preloader">
+      <div class="hojacont">
+      <img src="images/hoja.png" class="ímg-responsive hoja">
+      </div>
+    </div>
+
+<!-- /////////// MENU /////////// -->
+
+    <div id="menu" class="hidden">
+      <div class="text-center">
+        <ul>
+          <li id="closer"><span class="glyphicon glyphicon-remove clos"></span></li>  
+          <li><a href="">Noticias</a></li>
+          <li><a href="">Fotos</a></li>
+          <li><a href="">Discografia</a></li>
+
+        </ul>
+        
+      </div>
+
+    </div>
  <!-- /////////// BARRA /////////// -->    
-         <div class="row color">           
-        <div class="col-md-4 col-md-offset-1">    
-            <p id="viclogo"> Victoria <br> Birchner</p>
-        </div>
-    </div>     
-      
-      <div id="barraizq">
-          
-      <header>
-    <nav class="navbar navbar-default">
-        
-        
-          
-          <div id="navbar">
-              <a href=""><img src="/images/menu.jpg" alt="menu" id="menu"></a>
-              <ul class="nav navbar-nav">
-            <li class="active"><a href="#parallaxportada">
 
+
+           
+    <header id="barraizq">
+      <img src="/images/menu.jpg" alt="menu" id="menux">
+      <nav class="navbar navbar-default">
+        <div id="navbar">
+
+          
+          <ul class="nav navbar-nav"  id="#navbar">
+            <li class="active">
+              <a href="#quien">
+                <div class="itemout">
+                  <div class="barraitem"></div>
+                </div>
+            </a></li>
+          <li>
+            <a href="#fotos">
               <div class="itemout">
                 <div class="barraitem"></div>
               </div>
-            </a></li>
-              
-            <li><a href="#quien">
-
+            </a>
+          </li>
+          <li>
+            <a href="#noticias">
+              <div class="itemout">
+                <div class="barraitem"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#fechas">
+              <div class="itemout">
+                <div class="barraitem"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#videos">
+              <div class="itemout">
+                <div class="barraitem"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#contacto">
               <div class="itemout">
               <div class="barraitem"></div>
-              </div>
-            </a></li>
-            <li><a href="#fotos">
-
-              <div class="itemout">
-              <div class="barraitem"></div>
-              </div>
-            </a></li>
-            <li><a href="#videos">
-
-              <div class="itemout">
-              <div class="barraitem"></div>
-              </div>
-            </a></li>
-            <li><a href="#contacto">
-              <div class="itemout">
-              <div class="barraitem"></div>
-              </div>
-            </a></li>
-              </ul>
-          </div><!-- /.nav-collapse  -->
-        
+            </div>
+            </a>
+          </li>
+        </ul>
+      </div><!-- /.nav-collapse  -->
     </nav>
-    </header>
-      </div>
+  </header>
+
       
       
  <!-- /////////// PORTADA /////////// -->    
            
    <div class="section" id="portada">
        <div id="parallaxportada">
+        <img src="images/logo.png" class="logo img-responsive" alt="logo nombre">
        </div>
-   </div>
+   </div>    
       
 <!-- /////////// QUIEN SOY /////////// -->    
       
    <div class="section" id="quien">
        
        <div class="row color">
-           <h2>Quien soy</h2>   
+           <h2>Quién soy</h2>   
            
             <div class="col-md-7 col-md-offset-1" id="quientexto">
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p> 
@@ -128,7 +163,7 @@
    <div class="section" id="fotos">
         <div class="row">
 
-            <h1 class="heading text-center">Fotos</h1>
+            <h2 class="heading text-center" style="color:black">Fotos</h2>
           </div> 
         <div id="fotosdiv">
           
@@ -198,18 +233,73 @@
 
         </div>
      </div>
+
+       
+       
+       
+       
+       
+<!-- /////////// NOTICIAS /////////// -->        
+       
+       
+       <div class="section" id="noticias">
+          <h2 class="heading text-center" style="color:black">Noticias</h2>
+          <div class="row">
+              
+            <div class="col-md-4">
+              <div class="noti">
+                <h3 class="text-center">Voces a la obra, de Juan Falú</h3>
+                <img src="../images/2.jpg" class="img-responsive cardimg">
+                <p>La nueva generación celebra sus canciones...</p> 
+                <a href="">
+                <button class="btn link" type="button">Ver mas</button>        
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="noti">
+                <h3 class="text-center">Centro Cultural El Espiral</h3>
+                <img src="../images/3.jpg" class="img-responsive cardimg">
+                <p>Adelanto del disco...</p>
+                <a href="">
+                <button class="btn link" type="button">Ver mas</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 noti">
+              <div class="">
+                <h3 class="text-center">Ciclo de Musica Popular</h3>       
+                <img src="../images/2.jpg" class="img-responsive cardimg">
+                <p>Adelanto del disco junto a Franco Luciani... </p>    
+              </div>
+                <a href="">
+                <button class="btn link" type="button">Ver mas</button>        
+                </a>
+            </div>
+              
+          </div>
+      </div>
+       
        
 <!-- /////////// FECHAS /////////// --> 
- <div class="col-xs-12 col-sm-12 col-md-12 col-md-offset-0" id="fechas">
-     
-     <h2 class="heading" style="color:black">Fechas</h2>
-                           
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div clas="section" id="fechas">
+    <h2 class="heading text-center" style="color:black">Próximas fechas</h2>
+    <div class="row">  
+                <div class="col-md-4 text-center"> Fecha </div>
+                <div class="col-md-4 text-center"> Lugar </div>
+            </div>   
+ <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          Collapsible Group Item #1
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <div class="row">  
+                <div class="col-md-4 text-center"> 20 de agosto </div>
+                <div class="col-md-4 text-center"> Tomorrowland </div>
+                <div class="col-md-4 text-center"> detalles </div>
+            </div>    
         </a>
       </h4>
     </div>
@@ -222,12 +312,16 @@
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingTwo">
       <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <div class="row">  
+                <div class="col-md-4 text-center"> 24 de septiembre </div>
+                <div class="col-md-4 text-center"> La Ópera de Sídney </div>
+                <div class="col-md-4 text-center"> detalles </div>
+            </div>    
         </a>
       </h4>
     </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
       <div class="panel-body">
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
       </div>
@@ -236,26 +330,25 @@
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingThree">
       <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+          <div class="row">  
+                <div class="col-md-4 text-center"> 15 de diciembre </div>
+                <div class="col-md-4 text-center"> Madison square garden </div>
+                <div class="col-md-4 text-center"> detalles </div>
+            </div>    
         </a>
       </h4>
     </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
+    <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body" >
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
       </div>
     </div>
   </div>
-</div>
-  
-  
-   
- 
 </div>       
-<!-- /////////// VIDEOS /////////// -->
+</div>
+<!-- /////////// VIDEOS ///////////-->
       
-   <div class="section" id="videos">
         
        <div class="section" id="videos">
         <div class="" id="video" style="position:relative;">
@@ -273,16 +366,41 @@
         </div>
         </div>
       </div>
-   </div>
-            
+     
+<!--
+   <div id="login-container" class="pre-auth">This application requires access to your YouTube account.
+      Please <a href="#" id="login-link">authorize</a> to continue.
+    </div>
+    <div id="buttons">
+      <button id="playlist-button" disabled onclick="createPlaylist()">Create a new Private Playlist</button>
+      <br>
+      <label>Current Playlist Id: <input id="playlist-id" value='' type="text"/></label>
+      <br>
+      <label>Video Id: <input id="video-id" value='GZG9G5txtaE' type="text"/></label><button onclick="addVideoToPlaylist()">Add to current playlist</button>
+    </div>
+    <h3>Playlist: <span id="playlist-title"></span></h3>
+    <p id="playlist-description"></p>
+    <div id="playlist-container">
+      <span id="status">No Videos</span>
+    </div>
+   -->
+
+
 <!-- /////////// CONTACTO /////////// -->  
       
    <div class="section" id="contacto">
-         
-          <div class="row color">  
-            <h2>Contacto</h2>  
-            <div class="col-md-6 col-md-offset-3">
 
+         <div class="col-md-4"></div>
+
+         <div class="col-md-4">
+
+          <div class="fb-page" data-href="https://www.facebook.com/VictoriaBirchner" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/VictoriaBirchner" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/VictoriaBirchner">Victoria Birchner</a></blockquote></div>
+         </div>
+         <div class="col-md-4">
+          <div class="row color">  
+              
+            <div class="col-md-10">
+                    <h2>Contacto</h2>
                  <form action="send.php" method="post" class="form">
             
                     <div class="form-group">
@@ -305,15 +423,16 @@
                           <button class="btn linkform" type="submit" >Enviar</button>     
                         </div>
                     
-          </div>        
-
-        </div>
-   </div>
+        </div>        
+      </div>
+    </div>
+  </div>
    <div id="barrader">
     <div class="redes">
-    <a href=""><img src="/images/logoinstablack.jpg" alt="vicbirinstagram" class="accesos"></a>
-    <a href=""><img src="/images/logofaceblack.jpg" alt="vicbirface" class="accesos"></a>
-    <a href=""><img src="/images/logotwitblack.jpg" alt="vicbirtwitter" class="accesos"></a>
+    <a href="https://www.youtube.com/channel/UCucwaQGrLLUZZjhI8Hkq0Xw" target="_blank"><img src="/images/youtube.png" alt="vicbiryoutube" class="accesos"></a>    
+    <a href="" target="_blank"><img src="/images/logoinstablack.jpg" alt="vicbirinstagram" class="accesos"></a>
+    <a href="" target="_blank"><img src="/images/logofaceblack.jpg" alt="vicbirface" class="accesos"></a>
+    <a href="" target="_blank"><img src="/images/logotwitblack.jpg" alt="vicbirtwitter" class="accesos"></a>
     </div>
    </div>
 
@@ -332,14 +451,16 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
+             
     <!-- build:js scripts/plugins.js -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
  
     <!-- endbuild -->
        
-    <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
     
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>

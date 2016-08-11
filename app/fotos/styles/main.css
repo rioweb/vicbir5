@@ -23,28 +23,23 @@
   max-width: 930px;
 }
 .section{
-  padding: 50px 0px;
+  padding: 0px 0px;
     position: relative;
 }
 
 /*** Nav ***/
-.navbar{
-  padding-top: 5px;
-  height: 60px;
-  background-color: #AFB42B;
+
+#volver{
+  background-image: url(/app/images/hoja.png);
+  height: 40px;
+  width: auto;
+  float: left;
+  margin-top: 20vh;
+  margin-left: 30px;
 }
-.navbar-default .navbar-brand ,.navbar-default .navbar-nav > li > a{
-  color: white;
-}
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-    color: white;
-    font-weight: 600;
-  background-color: #AFB42B;
-  border-bottom: 4px solid #FF5722;
-}
+
 .card{
-  background-color: #CDDC39;
+  background-color: #e0f2f1;
   border-radius: 2px;
   min-height: 350px;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)!important;
@@ -52,14 +47,14 @@
 }
 .card p{
   margin: 5px;
-  color: white;
+  color: black;
   font-weight: 500;
 }
 .card h2{
   color: white;
   font-size: 18px;
   text-align: left;
-  background-color: #AFB42B;
+  background-color: #009688;
   width: 100%;
   margin: 50px 40px 0px 0px;
   padding: 20px 20px;
@@ -113,9 +108,14 @@
   }
 }
 
+.album {
+    padding: 10px;
+    padding-top: 0;
+}
+
 .link{
   text-align: center;
-  background-color: #FF5722;
+  background-color: #009688;
   color: white;
   position: relative;
   margin-bottom: 10px;
@@ -137,7 +137,8 @@ link a{
   border-bottom: 1px solid #e5e5e5;
 }
 .heading{
-  border-bottom: 3px solid #FF5722;
+  border-bottom: 3px solid #009688;
+  margin-bottom: 0;    
 }
 /*** ***/
 .portfolio-item{
