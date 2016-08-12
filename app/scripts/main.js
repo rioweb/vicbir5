@@ -1,5 +1,10 @@
 'use strict';
-
+navigator.webkitTemporaryStorage.queryUsageAndQuota ( 
+    function(usedBytes, grantedBytes) {  
+        console.log('we are using ', usedBytes, ' of ', grantedBytes, 'bytes');
+    }, 
+    function(e) { console.log('Error', e);  }
+);
 
 var main = function(){
   /*global someFunction Waypoint:true*/
@@ -8,7 +13,7 @@ var main = function(){
 /*eslint no-unused-vars: "error"*/
   /* global $ */
 setTimeout(function() {
-    $('#preloader').fadeOut('10000');
+    $('#preloader').fadeOut('100');
   },5500);
 
 

@@ -240,6 +240,7 @@ div.col-md-6 {
 /* //////////// VIDEO //////////// */
 #videos {
     padding-top: 0;
+    margin-bottom: 40px;
 }
 #imgvideo{
         padding-right: 0px;
@@ -248,6 +249,14 @@ div.col-md-6 {
 
 #botvideo{
     
+}
+iframe{
+  margin: 10px auto;
+}
+.show{
+  width: 100%;
+  max-width: 800px;
+  height: 400px;   
 }
 
 /* //////////// CONTACTO //////////// */
