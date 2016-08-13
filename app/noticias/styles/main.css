@@ -420,34 +420,39 @@ ul.nav.navbar-nav {
 .cardimg {
     
 }
-body,#barraizq, #barrader,nav, .navbar-default, #navbar li a{
+.green{
+  height: 100%;
+  background-color: #009688;
+  padding-top: 40px;
+}
+.facex{
+  margin-bottom: 20px;
+}
+.white{
+  color:white;
+}
+.instagallery{
+  height: 300px;
+}
+
+
+/* Space out content a bit */
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    
+}
+@media screen and (max-width: 980px) {
+ .green{
+  padding-top: 10px;
+  }   
+}
+
+  body,#barraizq, #barrader,nav, .navbar-default, #navbar li a{
     background-color: #e0f2f1;
   }
   h2, h1{
     font-weight: 700;
     font-size: 1.9em;
   }
-/* Space out content a bit */
-
-
-/* Responsive: Portrait tablets and up */
-@media screen and (max-width: 768px) {
-  body{
-
-    padding-right: 10px;
-  }
-  #barrader{
-    background-color: transparent;
-  }
-  #parallaxportada{
-  background-position: 100% 5%;
-  background-size: cover; 
-  }   
-
-}
-@media screen and (max-width: 480px) {
-
-  
-}
-
-  
