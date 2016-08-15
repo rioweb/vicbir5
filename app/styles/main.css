@@ -408,7 +408,10 @@ ul.nav.navbar-nav {
   background-size: cover; 
 }
 
-
+.btn {
+    background-color: #009688;
+    color: white;
+}
 
 #noticias{
     padding-top: 0;

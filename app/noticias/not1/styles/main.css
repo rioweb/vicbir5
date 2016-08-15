@@ -67,10 +67,6 @@ body {
   -webkit-animation: rotation 10s infinite linear;
 }
 
-.btn {
-    background-color: #009688;
-    color: white;
-}
 
 @-webkit-keyframes rotation {
     from {-webkit-transform: rotate(0deg);}
@@ -86,13 +82,8 @@ body {
  padding-top: 0;   
 }
 
-#contnot {
-    font-size: 20px;
-    padding: 10px;
-}
-
 #parallaxportada{
-  background: url(../images/portada.jpg) fixed; 
+  background: url(../../images/portada.jpg) fixed; 
   height: 100vh; 
   position: relative;
   margin: 0 auto;
@@ -140,7 +131,7 @@ body {
     margin-bottom: 0;
 }
 #quienimg{
-    background-image: url(../images/vik-46.png);
+    background-image: url(../../images/vik-46.png);
     background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-size: contain;
@@ -162,7 +153,7 @@ h2 {
 }
 
 #fotosdiv{
-  background: url(../images/8.jpg) fixed; 
+  background: url(../../images/8.jpg) fixed; 
   height: auto;
   min-height: 1050px;
   width: 100%;
@@ -409,7 +400,7 @@ ul.nav.navbar-nav {
 }
 
 #parallax1{
-  background: url(../images/portadax.jpg) fixed; 
+  background: url(../../images/portadax.jpg) fixed; 
   height: 300px; 
   position: relative;
   margin: 0 auto;
@@ -432,10 +423,10 @@ ul.nav.navbar-nav {
 .green{
   height: 100%;
   background-color: #009688;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 .facex{
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .white{
   color:white;
@@ -445,6 +436,16 @@ ul.nav.navbar-nav {
   margin-bottom: 40px;
 }
 
+.imnoti{
+    max-height: 400px;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+#contnot {
+    font-size: 20px;
+    padding: 10px;
+}
 
 /* Space out content a bit */
 
