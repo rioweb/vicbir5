@@ -49,6 +49,7 @@ body {
   cursor: pointer;
 }
 .logo{
+    min-height: 50px;
   position: absolute;
   bottom: 50px;
 }
@@ -67,7 +68,9 @@ body {
   -webkit-animation: rotation 10s infinite linear;
 }
 
-
+#chicas {
+    max-height: 160px; 
+}
 @-webkit-keyframes rotation {
     from {-webkit-transform: rotate(0deg);}
     to   {-webkit-transform: rotate(359deg);}
@@ -159,6 +162,7 @@ h2 {
   width: 100%;
   position: relative;
   margin: 0 0;
+  padding-top: 50px;    
   padding-left: 30px;
   padding-right: 30px;    
   background-size: cover;
@@ -246,10 +250,19 @@ div.col-md-6 {
         padding-right: 0px;
         padding-left: 0px;
         }
+.glyphicon-chevron-left:before {
+    color: #009688;
+}
 
-#botvideo{
+.glyphicon-chevron-right:before {
+    color: #009688;
+}
+
+.vid:hover{
+    opacity: 0.5;
     
 }
+
 iframe{
   margin: 10px auto;
 }
@@ -259,9 +272,19 @@ iframe{
   height: 400px;   
 }
 
+.carousel-control.left {
+  
+}
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  
+}
+
 /* //////////// CONTACTO //////////// */
 .fbpage{
   margin-bottom: 25px;
+    
 }
 
 #contacto{
@@ -437,7 +460,7 @@ body,#barraizq, #barrader,nav, .navbar-default, #navbar li a{
 @media screen and (max-width: 768px) {
   body{
 
-    padding-right: 10px;
+    
   }
   #barrader{
     background-color: transparent;
@@ -449,7 +472,10 @@ body,#barraizq, #barrader,nav, .navbar-default, #navbar li a{
 
 }
 @media screen and (max-width: 480px) {
+.fbpage{
 
+    padding: 5px;
+}
   
 }
 
