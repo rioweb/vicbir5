@@ -13,8 +13,8 @@ var main = function(){
 /*eslint no-unused-vars: "error"*/
   /* global $ */
 setTimeout(function() {
-    $('#preloader').fadeOut('300');
-  },1050);
+    $('#preloader').fadeOut('100');
+  },5500);
 
 
 $('.nav li, .nav li a').click(function (e) {
@@ -35,13 +35,8 @@ $('#closer').click(function(){
 if(window.matchMedia('(max-width: 480px)').matches) {
   var weight = $(window).height();
   $('.fullheight').css('height', weight);
+  
 };
-    
- $('.carousel-inner').carousel({
-  interval: 9999999999999
-});
-    
-     
 $(function(){
   
     $('.nav li a[href*= "#" ]:not([href= "#" ])').click(function() {

@@ -49,7 +49,6 @@ body {
   cursor: pointer;
 }
 .logo{
-    min-height: 50px;
   position: absolute;
   bottom: 50px;
 }
@@ -68,9 +67,7 @@ body {
   -webkit-animation: rotation 10s infinite linear;
 }
 
-#chicas {
-    max-height: 160px; 
-}
+
 @-webkit-keyframes rotation {
     from {-webkit-transform: rotate(0deg);}
     to   {-webkit-transform: rotate(359deg);}
@@ -162,7 +159,6 @@ h2 {
   width: 100%;
   position: relative;
   margin: 0 0;
-  padding-top: 50px;    
   padding-left: 30px;
   padding-right: 30px;    
   background-size: cover;
@@ -250,30 +246,10 @@ div.col-md-6 {
         padding-right: 0px;
         padding-left: 0px;
         }
-.glyphicon-chevron-left:before {
-    color: #009688;
-}
 
-.glyphicon-chevron-right:before {
-    color: #009688;
-}
-.vid{margin: 5px; position: relative;
-z-index: 0;}
-.vid:hover{
-    opacity: 0.5;
+#botvideo{
     
 }
-.playbtn{
-  position: absolute;
-  z-index: 10;
-  top:50%;
-  opacity: 0;
-}
-.playbtn:hover{
-  opacity: 1; 
-}
-
-
 iframe{
   margin: 10px auto;
 }
@@ -283,20 +259,9 @@ iframe{
   height: 400px;   
 }
 
-.carousel-control.left {
-  
-}
-.carousel-control.right {
-  right: 0;
-  left: auto;
-  
-}
-
 /* //////////// CONTACTO //////////// */
 .fbpage{
-  margin-top:20px;
   margin-bottom: 25px;
-    
 }
 
 #contacto{
@@ -311,8 +276,8 @@ iframe{
 /* //////////// FECHAS //////////// */
 
 #fechas{
-    margin-top: 120px;
-    margin-bottom: 140px;
+    margin-top: 60px;
+    margin-bottom: 80px;
 }
 
 /* //////////// BARRA //////////// */
@@ -443,10 +408,7 @@ ul.nav.navbar-nav {
   background-size: cover; 
 }
 
-.btn {
-    background-color: #009688;
-    color: white;
-}
+
 
 #noticias{
     padding-top: 0;
@@ -456,41 +418,42 @@ ul.nav.navbar-nav {
 }
 
 .cardimg {
-  margin:0 auto;
-  max-height: 350px;
     
 }
-body,#barraizq, #barrader,nav, .navbar-default, #navbar li a{
+.green{
+  height: 100%;
+  background-color: #009688;
+  padding-top: 40px;
+}
+.facex{
+  margin-bottom: 20px;
+}
+.white{
+  color:white;
+}
+.instagallery{
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+
+/* Space out content a bit */
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    
+}
+@media screen and (max-width: 980px) {
+ .green{
+  padding-top: 10px;
+  }   
+}
+
+  body,#barraizq, #barrader,nav, .navbar-default, #navbar li a{
     background-color: #e0f2f1;
   }
   h2, h1{
     font-weight: 700;
     font-size: 1.9em;
   }
-/* Space out content a bit */
-
-
-/* Responsive: Portrait tablets and up */
-@media screen and (max-width: 768px) {
-  body{
-
-    
-  }
-  #barrader{
-    background-color: transparent;
-  }
-  #parallaxportada{
-  background-position: 100% 5%;
-  background-size: cover; 
-  }   
-
-}
-@media screen and (max-width: 480px) {
-.fbpage{
-
-    padding: 5px;
-}
-  
-}
-
-  
