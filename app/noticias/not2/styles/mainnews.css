@@ -13,14 +13,7 @@
   font-size: 1.1em;
   text-rendering: optimizeLegibility;
 }
-.parallaxnoti{
-      background: url(../../images/morfi.jpg) fixed;
-    height: 400px;
-    position: relative;
-    margin: 0 auto;
-    padding: 5%;
-    background-size: cover;
-}
+
 body {
     position: relative;
     padding-left: 35px;
@@ -59,12 +52,6 @@ body {
   position: absolute;
   bottom: 50px;
 }
-.imnoti{
-    max-height: 400px;
-    margin: 10px;
-    margin-bottom: 0px;
-}
-
 #preloader .hidden{
   display: none;
   opacity: 0;
@@ -80,10 +67,6 @@ body {
   -webkit-animation: rotation 10s infinite linear;
 }
 
-.btn {
-    background-color: #009688;
-    color: white;
-}
 
 @-webkit-keyframes rotation {
     from {-webkit-transform: rotate(0deg);}
@@ -97,11 +80,6 @@ body {
 
 #portada {
  padding-top: 0;   
-}
-
-#contnot {
-    font-size: 20px;
-    padding: 10px;
 }
 
 #parallaxportada{
@@ -436,13 +414,11 @@ ul.nav.navbar-nav {
     padding-top: 0;
 }
 .noti {
-  margin-top: 30px;
     padding: 10px;
 }
 
 .cardimg {
-  margin: 0 auto;
-    max-height: 250px;
+    
 }
 .green{
   height: 100%;

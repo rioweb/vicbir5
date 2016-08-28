@@ -14,7 +14,7 @@ var main = function(){
   /* global $ */
 setTimeout(function() {
     $('#preloader').fadeOut('100');
-  },1000);
+  },5500);
 
 
 $('.nav li, .nav li a').click(function (e) {
