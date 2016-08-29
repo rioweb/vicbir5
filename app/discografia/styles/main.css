@@ -128,7 +128,8 @@ link a{
   border-bottom: 1px solid #e5e5e5;
 }
 .heading{
-  margin-bottom: 20px;    
+  margin-bottom: 20px;
+  margin-left: 10px;    
 }
 /*** ***/
 .portfolio-item{
@@ -367,6 +368,9 @@ figcaption p{
   top: 50%;
 }
 
+.cd {
+  margin: 5px;  
+}
 
 figure:hover img {
     opacity: .6;
