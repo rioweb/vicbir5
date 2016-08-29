@@ -408,3 +408,16 @@ ul.nav.navbar-nav {
   .page-header{
     margin:0px 0 10px;
   }
+/*Tab pagination*/
+  .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+     background-color: #009688;
+   }
+   .pagination li{
+    font-size: 16px;
+   }
+    iframe{
+    min-height:300px;  
+   }
+   .pagination > li > a, .pagination > li > span{
+    color: #009688;
+   }
