@@ -100,7 +100,6 @@ body {
   background-size: cover; 
 }
 .bigtitle h1{
-  font-size: 80px;
   font-weight: 700;
 }
 .row {
@@ -404,4 +403,7 @@ ul.nav.navbar-nav {
   .portfolio-item{
     max-height: 180px;
     margin: 0 auto;
+  }
+  .page-header{
+    margin:50px 0 10px;
   }

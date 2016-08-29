@@ -405,3 +405,7 @@ ul.nav.navbar-nav {
     max-height: 180px;
     margin: 0 auto;
   }
+
+  .page-header{
+    margin:0px 0 10px;
+  }
