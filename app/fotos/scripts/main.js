@@ -28,12 +28,15 @@ if(window.matchMedia('(max-width: 480px)').matches) {
   
 };
 
+$('#menux').click(function(){
+    $('#menu').fadeIn(300).removeClass('hidden').addClass('visible');  
+});
+$('#closer').click(function(){
+    $('#menu').fadeOut(600).addClass('hidden');  
+});
 
-  var topoffset = 50;
-	$('body').scrollspy({
-		target: 'header .navbar',
-		offset: topoffset
-	});
+
+
 
 
 if (window.matchMedia('(min-width: 800px)').matches) {
@@ -123,10 +126,7 @@ var progress = setInterval(function () {
     }
 }, 800);
 
-$(window).load(function() {
-  $('#bar').width(600);
-  $('.loader').fadeOut(3000);
-});
+
 $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();

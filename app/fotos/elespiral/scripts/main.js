@@ -21,20 +21,18 @@ function changePage(event) {
 $(function () {
     $('.nav li').click( changePage );
 });
+
+setTimeout(function() {
+    $('#preloader').fadeOut('100');
+  },1000);
+
+
     
 if(window.matchMedia('(max-width: 480px)').matches) {
   var weight = $(window).height();
   $('.fullheight').css('height', weight);
   
 };
-
-
-  var topoffset = 50;
-	$('body').scrollspy({
-		target: 'header .navbar',
-		offset: topoffset
-	});
-
 
 if (window.matchMedia('(min-width: 800px)').matches) {
   var hash = $(this).find('li.active a').attr('href');
@@ -109,23 +107,11 @@ $(function($){
     });
 });
 };
-var progress = setInterval(function () {
-    var $bar = $('#bar');
-
-    if ($bar.width() >= 600) {
-        clearInterval(progress);
-    } else {
-        $bar.width($bar.width() + 60);
-    }
-    $bar.text($bar.width() / 6 + '%');
-    if ($bar.width() / 6 === 100){
-      $bar.text('Cargando ... ' + $bar.width() / 6 + '%');
-    }
-}, 800);
-
-$(window).load(function() {
-  $('#bar').width(600);
-  $('.loader').fadeOut(3000);
+$('#menux').click(function(){
+    $('#menu').fadeIn(300).removeClass('hidden').addClass('visible');  
+});
+$('#closer').click(function(){
+    $('#menu').fadeOut(600).addClass('hidden');  
 });
 $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
     event.preventDefault();

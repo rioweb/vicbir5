@@ -148,7 +148,28 @@ body {
 
 
 /* //////////// FOTOS //////////// */
+.gale:hover {
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .5s ease-in-out;
+} 
 
+.gale {
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%); 
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%); 
+  -o-transition: .5s ease-in-out;
+  max-height: 360px;
+  margin: 0 auto;
+}
+.dasil{
+  max-height: 200px;
+}
 
 h2 {
     color: white;
