@@ -1,11 +1,15 @@
-'use strict';
+
 navigator.webkitTemporaryStorage.queryUsageAndQuota ( 
     function(usedBytes, grantedBytes) {  
         console.log('we are using ', usedBytes, ' of ', grantedBytes, 'bytes');
     }, 
     function(e) { console.log('Error', e);  }
 );
-
+if(window.matchMedia('(max-width: 480px)').matches) {
+  var weight = $(window).height();
+  $('.fullheight').css('height', weight);
+  
+};
 var main = function(){
   /*global someFunction Waypoint:true*/
 /*eslint no-undef: "error"*/
