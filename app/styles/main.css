@@ -326,6 +326,7 @@ iframe{
     padding-bottom: 3%;
     overflow: hidden;
     padding: 5px;
+    margin-bottom: 20px;
 }
 
 
@@ -508,10 +509,28 @@ body,#barraizq, #barrader,nav, .navbar-default, #navbar li a{
 }
 @media screen and (max-width: 480px) {
 .fbpage{
-
+    margin-bottom: 10px;
     padding: 5px;
 }
   
 }
+iframe{
+    min-height:350px; 
+}
+/*
+@media screen (min-width:480px) and (max-width: 780px) {
 
-  
+iframe{
+    min-height:500px; 
+}
+}  */
+._10b6 ._5pcb ._1_lk ._5tmf ._3-8x{
+    max-height: 100px;
+}
+
+.fb-page span, .u_0_0{
+    height: 10px!important;
+ margin-bottom: 10px;
+    padding-bottom: 25px;
+}
+
