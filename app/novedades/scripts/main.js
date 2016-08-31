@@ -1,10 +1,4 @@
 'use strict';
-navigator.webkitTemporaryStorage.queryUsageAndQuota ( 
-    function(usedBytes, grantedBytes) {  
-        console.log('we are using ', usedBytes, ' of ', grantedBytes, 'bytes');
-    }, 
-    function(e) { console.log('Error', e);  }
-);
 
 var main = function(){
   /*global someFunction Waypoint:true*/

@@ -129,7 +129,9 @@ link a{
 }
 .heading{
   margin-bottom: 20px;
-  margin-left: 10px;    
+  margin-top: 40px;
+  margin-left: 30px;
+  font-size: 1.9em;    
 }
 /*** ***/
 .portfolio-item{
@@ -369,7 +371,12 @@ figcaption p{
 }
 
 .cd {
-  margin: 5px;  
+  margin: 5px;
+  
+}
+.cda{
+  margin-right: 0px;
+  margin-left: 25px;  
 }
 
 figure:hover img {
@@ -381,12 +388,10 @@ figure:hover figcaption {
 }
 
 div.col-md-3 {
-    padding-left: 8px;
-    padding-right: 8px;
 }
 div.col-md-6 {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .link{
   right: 30px;
@@ -579,4 +584,15 @@ ul.nav.navbar-nav {
   }
 iframe{
   min-height: 300px;
+}
+thead {
+    display: table-header-group;
+}
+tbody{
+  font-size:0.6em;
+  height: 300px;
+  overflow:scroll; 
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+  border:none;
 }

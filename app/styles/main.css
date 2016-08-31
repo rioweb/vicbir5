@@ -528,7 +528,12 @@ body,#barraizq, #barrader,nav, .navbar-default, #navbar li a{
   
 }
 iframe{
-    min-height:350px; 
+    min-height:380px; 
+}
+@media screen and (min-width:1280px){
+iframe{
+    min-height: 430px;
+}
 }
 /*
 @media screen (min-width:480px) and (max-width: 780px) {
