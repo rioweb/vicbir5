@@ -179,7 +179,9 @@ h2 {
     color: white;
     text-align: center;
 }
-
+.sue{
+  font-size: 18px;
+}
 #fotosdiv{
   background: url(../images/8.jpg) fixed; 
   height: auto;

@@ -63,6 +63,7 @@ body {
     max-height: 400px;
     margin: 10px;
     margin-bottom: 0px;
+    float: right;
 }
 
 #preloader .hidden{
