@@ -13,14 +13,118 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.css' />
+    <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.min.css' />
     <!-- endbower -->
     <!-- endbuild -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/animate.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+    
+     <style>.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+*{  
+  -webkit-box-sizing:boder-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+    position: relative;
+    padding-left: 35px;
+    padding-right: 35px;
+} 
+#preloader, #menu{
+  position: fixed;
+  background-color: #e0f2f1;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: inset 0 0 0 25px #fff;
+  -moz-box-shadow: inset 0 0 0 25px #fff;
+  -webkit-box-shadow: inset 0 0 0 25px #fff;
+}
+#menu{
+  display: none;
+}
+#menu ul{
+  color: #009688;
+  font-size: 30px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  list-style: none;
+  top:30%;
+}
+.clos{
+  color: #009688;
+  cursor: pointer;
+}
+.logo{
+    min-height: 50px;
+  position: absolute;
+  bottom: 50px;
+}
+#preloader .hidden{
+  display: none;
+  opacity: 0;
+}
+.hoja{
+   -webkit-animation: rotation 10s infinite linear;  
+}
+.hojacont{
+  position: absolute;
+  top: 40%;
+  margin-left: 50%;
+  transform-origin: 2px 30% 10px;
+  -webkit-animation: rotation 10s infinite linear;
+}
+
+#chicas {
+    max-height: 160px; 
+}
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+
+.section{
+    margin-bottom: 60px;
+    padding-top: 50px;
+}
+
+#portada {
+ padding-top: 0;   
+}
+
+.parallaxportada{
+  background: url(../images/portada.jpg) fixed; 
+  
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  background-size: cover;
+  max-height: 100vh; 
+}
+.bigtitle h1{
+  font-size: 80px;
+  font-weight: 700;
+}
+.row {
+    margin: 0 0;
+}
+.fullheight{
+  height: 100vh;
+} 
+    </style>    
     <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
@@ -51,6 +155,9 @@
     <meta name="twitter:title" content="Victoria Birchner" />
     <meta name="twitter:description" content="Victoria Birchner" />
     <meta name="twitter:image" content="http://www.victoriabirchner.com.ar/images/portada.jpg" />
+
+    <meta NAME="ROBOTS" CONTENT="INDEX, NOFOLLOW">
+
 
 
   </head>
@@ -97,7 +204,7 @@
 
            
     <header id="barraizq">
-      <img src="/images/menu.jpg" alt="menu" id="menux">
+      <img src="/images/menu.jpg" alt="menu de Victoria Birchner " id="menux">
       <nav class="navbar navbar-default">
         <div id="navbar">
 
@@ -159,7 +266,7 @@
            
    <div class="section" id="portada">
        <div class="parallaxportada fullheight">
-        <img src="images/logo.png" class="logo img-responsive" alt="logo nombre">
+        <img src="images/logo.png" class="logo img-responsive" alt="logo Victoria Birchner">
        </div>
    </div>    
       
@@ -176,7 +283,7 @@
    <div class="section" id="fotos">
         <div class="row">
 
-            <h2 class="heading text-center" style="color:black">Fotos</h2>
+            <h1 class="heading text-center" style="color:black">Fotos</h1>
           </div> 
         <div id="fotosdiv">
           
@@ -204,7 +311,7 @@
             </div>
           </div>  
           <div class="col-md-3">         
-              <img alt="Victoria Birchner" src="images/b.jpg" class="img-responsive gale" id="chicas"/>
+              <img alt="Victoria Birchner hoy" src="images/b.jpg" class="img-responsive gale" id="chicas"/>
           </div> 
              
           <div class="col-md-3">
@@ -215,7 +322,7 @@
                 
         </a>
         </div>  
-            <a href="/fotos"><button class="btn link" type="button">Ver mas</button></a>
+            <a href="/fotos"><button class="btn link" type="button">Ver mas fotos de Victoria</button></a>
         </div>
      </div>
 
@@ -228,13 +335,24 @@
        
        
        <div class="section" id="noticias">
-          <h2 class="heading text-center" style="color:black">Novedades</h2>
+          <h1 class="heading text-center" style="color:black">Novedades de Victoria Birchner</h1>
           <div class="row">
-              
+            
+            <div class="col-md-4">
+              <div class="noti">
+                <h3 class="text-center">“Mi andar es transitar el sendero siempre en busca de un objetivo”</h3>
+                <img alt="Victoria Birchner bf entrevista" src="../images/bf.jpg" class="img-responsive cardimg">
+                <p class="small text-center">Nota en BF Entrevistas</p>
+                <a href="/novedades/not4">
+                <button class="btn btn-block">Ver mas</button>
+                </a>
+              </div>
+            </div>
+
             <div class="col-md-4">
               <div class="noti">
                 <h3 class="text-center">Presentacion en Telefe</h3>
-                <img alt="morfi" src="../images/morfi.jpg" class="img-responsive cardimg">
+                <img alt="Victoria Birchner en programa Morfi" src="../images/morfi.jpg" class="img-responsive cardimg">
                 <p class="small text-center">Programa "Morfi" del 26/08/2016</p>
                 <a href="/novedades/not1">
                 <button class="btn btn-block">Ver mas</button>
@@ -244,16 +362,17 @@
 
             
 
-            <div class="col-md-4 noti">
-              <div class="">
+            <div class="col-md-4">
+              <div class="noti">
                 <h3 class="text-center">Una artista que se abre camino</h3>       
-                <img alt="portalvos" src="../images/portalvos.jpg" class="img-responsive cardimg">
+                <img alt="Victoria Birchner en Portal Vos" src="../images/portalvos.jpg" class="img-responsive cardimg">
                 <p class="small text-center">"Portal VOS" conversó de forma exclusiva con Victoria Birchner...</p>    
               </div>
               <a href="/novedades/not2">
               <button class="btn btn-block">Ver mas</button>
                 </a>
             </div>
+            <!--
             <div class="col-md-4">
               <div class="noti">
                 <h3 class="text-center">Lo importante es el mensaje</h3>
@@ -264,7 +383,7 @@
                 </a>
               </div>
             </div>
-              
+              -->
           </div>
       </div>
        
@@ -296,33 +415,33 @@
             <div class="col-xs-12 col-sm-2 vid">
               <a href="https://www.youtube.com/embed/lNBICcScH8s" target="show">
                 
-              <img alt="video1" src="https://i.ytimg.com/vi/lNBICcScH8s/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=Vs7Vpn7oJmeWM4lq18beQWhZr9M">
+              <img alt="Victoria Birchner  video1" src="https://i.ytimg.com/vi/lNBICcScH8s/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=Vs7Vpn7oJmeWM4lq18beQWhZr9M">
               </a>
             </div>
             <div class="col-xs-12 col-sm-2 vid">
               <a href="https://www.youtube.com/embed/rNGWP9NRVQk" target="show">
                 
-              <img alt="video2" src="https://i.ytimg.com/vi/rNGWP9NRVQk/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=zBMhs59D5NmaTS-izect6NLwQIU">
+              <img alt="video2 Victoria Birchner " src="https://i.ytimg.com/vi/rNGWP9NRVQk/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=zBMhs59D5NmaTS-izect6NLwQIU">
               </a>
             </div>
             <div class="col-xs-12 col-sm-2 vid">
 
               <a href="https://www.youtube.com/embed/dJ8wW7nXYpQ" target="show">
                 
-              <img alt="video3" src="https://i.ytimg.com/vi/dJ8wW7nXYpQ/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=gt6QzN87dyEgcgvkhlNzBQzPA78">
+              <img alt="Victoria Birchner  video3" src="https://i.ytimg.com/vi/dJ8wW7nXYpQ/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=gt6QzN87dyEgcgvkhlNzBQzPA78">
               </a>
             </div>
             <div class="col-xs-12 col-sm-2 vid">
               <a href="https://www.youtube.com/embed/zdnRmd1GDVU" target="show">
                 
-              <img alt="video4" src="https://i.ytimg.com/vi/zdnRmd1GDVU/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=nHrP7low66ky2un05DjxcOPKji4">
+              <img alt="video4 Victoria Birchner " src="https://i.ytimg.com/vi/zdnRmd1GDVU/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=nHrP7low66ky2un05DjxcOPKji4">
               </a>
             </div>
 
             <div class="col-xs-12 col-sm-2 vid">
               
               <a href="https://www.youtube.com/embed/iVsY18yuPJA" target="show">             
-              <img alt="video5" src="https://i.ytimg.com/vi/iVsY18yuPJA/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=3-CZXyNc7vT0WaEcKMiWH9g4Wpw">
+              <img alt="Victoria Birchner video5" src="https://i.ytimg.com/vi/iVsY18yuPJA/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=3-CZXyNc7vT0WaEcKMiWH9g4Wpw">
               </a>
             </div>
           </div>  
@@ -369,13 +488,13 @@
 <!-- /////////// FECHAS /////////// -->
        
 <div clas="section" id="fechas">
-    <h2 class="heading text-center" style="color:black">Próximas fechas</h2>
+    <h2 class="heading text-center" style="color:black">Próximas fechas de Victoria</h2>
     <div class="row">  
                 <div class="col-xs-6 col-md-4 text-center"> Fecha </div>
                 <div class="col-xs-6 col-md-4 text-center"> Lugar </div>
             </div>   
  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
+ <!-- <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title">
         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -419,21 +538,25 @@ Como siempre, la entrada es libre y gratuita y pueden retirarla en la boleteria 
       <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
           <div class="row">  
-                <div class="col-xs-6 col-md-3 text-center"> 22 de Septiembre </div>
-                <div class="col-xs-6 col-md-6 text-center">Rosario - Sala de la Cooperación </div>
+                <div class="col-xs-6 col-md-3 text-center"> 22 de Septiembre - 19:30 hs</div>
+                <div class="col-xs-6 col-md-6 text-center">Rosario - Centro Cultural de la Cooperación </div>
                 <div class="hidden-xs col-md-3 text-center"> Ver mas... </div>
             </div>    
         </a>
       </h4>
     </div>
-    <div id="collapseTwo" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
+    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
       <div class="panel-body">
         
-
+ <div class="row">
+          <div class="col-md-6 col-md-offset-3" >
+            <img class="img-responsive eventfoto" src="images/musicaparatodos.jpg"></img>
+          </div>
+        </div>
 
       </div>
     </div>
-  </div>
+  </div>-->
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingThree">
       <h4 class="panel-title">
@@ -446,10 +569,26 @@ Como siempre, la entrada es libre y gratuita y pueden retirarla en la boleteria 
         </a>
       </h4>
     </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+    <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
       <div class="panel-body">
         
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-md-offset-3" >
+            <img class="img-responsive eventfoto" src="images/laserre.jpg"></img>
+            <p class="sue">La Asociación Cultural Otras Voces y el Centro Ciudad de Rafaela informan que el Sábado 1 de Octubre a las 21:30 horas continuará el Ciclo de Música Popular 2016 con el recital de la cantante Victoria Birchner quien presentará su primer cd como solista “Memoria del Viento” en el Teatro Lasserre.-br <br>
+El disco fue grabado con los músicos José “Chey” Ramos en guitarra y arreglos, Leo Pretto en guitarra y Franco Ochat en percusión contando además con la participación de Juan Falú, Jorge Fandermole, Eduardo Spinassi, Angela Irene y Franco Luciani entre otros. El álbum fue grabado en el estudio Blue Room de la ciudad de Rosario; la mezcla y la masterización fueron realizadas por los reconocidos técnicos Jorge “Portugués” Da Silva y Osvel Costa. <br>
+Victoria inicia su camino en la música en la “Escuela Técnica de Capacitación Musical 22 de Noviembre" de nuestra ciudad en la especialidad Canto. Desde el año 2008 hasta comienzos del 2013 conforma el dúo Birchner-Carlini. En 2009 comienza sus estudios en la escuela de música de la Universidad Nacional de Rosario, ciudad en la que reside hasta el día de hoy.
+En 2013 participó de la grabación del disco homenaje a Remo Pignoni junto a los músicos Rubén Carlini (guitarra) y José Ignacio Perren (piano).<br>
+Desde mediados del 2013 transita su carrera como solista abordando la música y la poesía argentina y cantó junto a reconocidos artistas como Laura Albarracín, Roberto Coya Chavero, Juan Falú y Franco Luciani, entre otros.<br>
+En la presentación en vivo contará con la presencia de los invitados Franco Luciani en armónica, Melania Yossen en violín, Marcelo Actis en contrabajo y Gabriel Vallejos en acordeón.-
+Las entradas anticipadas con un valor de $100,00, para los asociados a las instituciones organizadoras y jubilados de $80,00 y para los estudiantes de música de $60,00 se encuentran a la venta en el Teatro Lasserre, la Escuela Municipal de Música Remo Pignoni, la Escuela 22 de Noviembre que funciona en el Sindicato de Músicos, en Casa Marcucci Música, Jalito Tiempo de café y amigos, Faber Libros y en la sede de la C.T.A. Castellanos de Tucumán y San Martín. En el momento del espectáculo la entrada general costará $120,00.-<br>
+Esta actividad se realiza con el aporte de la Comisión Municipal para la Promoción de la Cultura y el Ministerio de Innovación y Cultura de la Provincia de Santa Fe.-<br>
+<br>
 
+  <a href="https://web.facebook.com/events/1260434217314401/" target="_blank"><button class="btn btn-block"><b> Ver evento </b></button></a>
+</p>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -531,10 +670,10 @@ Como siempre, la entrada es libre y gratuita y pueden retirarla en la boleteria 
   </div>
    <div id="barrader">
     <div class="redes">
-    <a href="https://www.youtube.com/channel/UCucwaQGrLLUZZjhI8Hkq0Xw" target="_blank"><img src="/images/youtube.png" alt="vicbiryoutube" class="accesos"></a>    
-    <a href="https://www.instagram.com/victoriabirchner/" target="_blank"><img src="/images/logoinstablack.jpg" alt="vicbirinstagram" class="accesos"></a>
-    <a href="https://www.facebook.com/VictoriaBirchner" target="_blank"><img src="/images/logofaceblack.jpg" alt="vicbirface" class="accesos"></a>
-    <a href="https://twitter.com/vickybirchner" target="_blank"><img src="/images/logotwitblack.jpg" alt="vicbirtwitter" class="accesos"></a>
+    <a href="https://www.youtube.com/channel/UCucwaQGrLLUZZjhI8Hkq0Xw" target="_blank"><img src="/images/youtube.png" alt="Youtube de Victoria Birchner" class="accesos"></a>    
+    <a href="https://www.instagram.com/victoriabirchner/" target="_blank"><img src="/images/logoinstablack.jpg" alt="Victoria Birchner Instagram" class="accesos"></a>
+    <a href="https://www.facebook.com/VictoriaBirchner" target="_blank"><img src="/images/logofaceblack.jpg" alt="Facebook de Victoria Birchner" class="accesos"></a>
+    <a href="https://twitter.com/vickybirchner" target="_blank"><img src="/images/logotwitblack.jpg" alt="Twitter de Victoria Birchner" class="accesos"></a>
     </div>
    </div>
 
@@ -555,20 +694,24 @@ Como siempre, la entrada es libre y gratuita y pueden retirarla en la boleteria 
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/waypoints/lib/noframework.waypoints.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
              
     <!-- build:js scripts/plugins.js -->
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
  
     <!-- endbuild -->
        
     
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </body>
 </html>

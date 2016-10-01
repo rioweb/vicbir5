@@ -1,17 +1,20 @@
+'use strict';
+navigator.webkitTemporaryStorage.queryUsageAndQuota ( 
+    function(usedBytes, grantedBytes) {  
+        console.log('we are using ', usedBytes, ' of ', grantedBytes, 'bytes');
+    }, 
+    function(e) { console.log('Error', e);  }
+);
 
-if(window.matchMedia('(max-width: 480px)').matches) {
-  var weight = $(window).height();
-  $('.fullheight').css('height', weight);
-  
-};
 var main = function(){
+  /*global someFunction Waypoint:true*/
 /*eslint no-undef: "error"*/
 
 /*eslint no-unused-vars: "error"*/
   /* global $ */
 setTimeout(function() {
-    $('#preloader').fadeOut('300');
-  },1050);
+    $('#preloader').fadeOut('100');
+  },1000);
 
 
 $('.nav li, .nav li a').click(function (e) {
@@ -32,13 +35,8 @@ $('#closer').click(function(){
 if(window.matchMedia('(max-width: 480px)').matches) {
   var weight = $(window).height();
   $('.fullheight').css('height', weight);
+  
 };
-    
- $('.carousel-inner').carousel({
-  interval: 9999999999999
-});
-    
-     
 $(function(){
   
     $('.nav li a[href*= "#" ]:not([href= "#" ])').click(function() {
@@ -61,6 +59,7 @@ $(function(){
 		offset: topoffset
 	});
 
+  $('.collapse').collapse();
 
 if (window.matchMedia('(min-width: 800px)').matches) {
   var hash = $(this).find('li.active a').attr('href');
